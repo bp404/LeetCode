@@ -26,6 +26,7 @@ class Solution(object):
 			# print x
 			for b in xrange(0,2*n):
 				bp3.append(bp2[bp-b][x/(2**b)])
+			# list反向排序
 			bp4.append(bp3[::-1])
 			# print bp3[::-1]
 			bp3 = []
