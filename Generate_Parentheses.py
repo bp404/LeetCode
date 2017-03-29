@@ -51,12 +51,15 @@ class Solution(object):
 					list[x][y] = "("
 				else :
 					list[x][y] = ")"
+		re = []
 		for x in xrange(0,len(list)):
 			# print list[x]
 			s = ''.join(list[x])
-			print s
-			s = ''
+			re.append(s)
+			# print s
+			# s = ''
+		return re
 
 
 bp = Solution()
-bp.generateParenthesis(4)
+print bp.generateParenthesis(4)
